@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P:regular');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 
+@font-face {
+	font-family: 'Pixel Code';
+	src: url('PixelCode.woff2');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
 	border: 0;
 	outline: 0;
+	color: #fff;
 }
 
 a {
@@ -30,3 +36,61 @@ ol {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes skeleton {
+	from {
+		margin-left: -70%;
+	}
+
+	to {
+		margin-left: 100%;
+	}
+}
+
+@keyframes cube_1 {
+	from {
+		top: 0;
+		left: 0;
+	}
+
+	50% {
+		top: 10px;
+		left: 10px;
+	}
+}
+
+@keyframes cube_2 {
+	from {
+		top: 0;
+		right: 0;
+	}
+
+	50% {
+		top: 10px;
+		right: 10px;
+	}
+}
+
+@keyframes cube_3 {
+	from {
+		bottom: 0;
+		left: 0;
+	}
+
+	50% {
+		bottom: 10px;
+		left: 10px;
+	}
+}
+
+@keyframes cube_4 {
+	from {
+		bottom: 0;
+		right: 0;
+	}
+
+	50% {
+		bottom: 10px;
+		right: 10px;
+	}
+}

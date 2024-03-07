@@ -10,7 +10,7 @@ export default meta
 
 type Story = StoryObj<typeof ComponentButton>
 
-export const Button: Story = {
+export const Docs: Story = {
 	args: {
 		children: 'Button',
 		appearance: 'primary'

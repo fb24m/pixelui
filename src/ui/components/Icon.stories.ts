@@ -10,14 +10,11 @@ export default meta
 
 type Story = StoryObj<typeof IconComponent>
 
-export const Icon: Story = {
+export const Docs: Story = {
 	args: {
-		icon: 'translate'
+		icon: 'translate',
+		className: 'text-[#fff]'
 	},
 	argTypes: {
-		size: {
-			options: ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl', '8xl', '9xl'],
-			control: { type: 'select' }
-		}
 	}
 }

@@ -1,5 +1,7 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from '@storybook/react'
 import '../src/pages/Layout/Layout.scss'
+
+import { pixelDarkTheme } from './brand-theme'
 
 const preview: Preview = {
   parameters: {
@@ -11,7 +13,7 @@ const preview: Preview = {
       },
     },
     docs: {
-      toc: true
+      theme: pixelDarkTheme
     }
   }
 };
