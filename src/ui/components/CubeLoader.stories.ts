@@ -12,8 +12,12 @@ type Story = StoryObj<typeof CubeLoader>
 
 export const Docs: Story = {
 	args: {
-
+		variation: 'beat'
 	},
 	argTypes: {
+		variation: {
+			control: { type: 'select' },
+			description: 'Controls the animation type'
+		}
 	}
 }

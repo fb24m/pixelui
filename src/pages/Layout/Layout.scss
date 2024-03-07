@@ -94,3 +94,33 @@ ol {
 		right: 10px;
 	}
 }
+
+@keyframes flycube2 {
+	0% {
+		left: 40px;
+		top: 0;
+	}
+
+	25% {
+		top: -40px;
+	}
+
+	50% {
+		left: 0px;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+}
+
+@keyframes flycube1 {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 40px;
+	}
+}
