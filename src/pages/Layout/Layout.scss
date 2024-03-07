@@ -44,6 +44,7 @@ ol {
 
 	to {
 		margin-left: 100%;
+		width: 50px;
 	}
 }
 
@@ -97,7 +98,7 @@ ol {
 
 @keyframes flycube2 {
 	0% {
-		left: 40px;
+		left: 0px;
 		top: 0;
 	}
 
@@ -106,21 +107,21 @@ ol {
 	}
 
 	50% {
-		left: 0px;
+		left: 40px;
 	}
 
 	100% {
 		top: 0;
-		left: 0;
+		left: 40px;
 	}
 }
 
 @keyframes flycube1 {
 	0% {
-		left: 0;
+		left: 40px;
 	}
 
 	100% {
-		left: 40px;
+		left: 0;
 	}
 }
