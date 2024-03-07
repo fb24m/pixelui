@@ -4,5 +4,7 @@ import { pixelDarkTheme } from './brand-theme';
 
 addons.setConfig({
 	theme: pixelDarkTheme,
-	sidebar: {}
+	sidebar: {
+		showRoots: true
+	}
 });

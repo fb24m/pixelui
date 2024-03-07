@@ -2,7 +2,7 @@ import { StoryObj } from '@storybook/react'
 import { Button as ComponentButton } from './Button.component'
 
 const meta = {
-	title: 'Button',
+	title: 'Components / Button',
 	component: ComponentButton
 }
 
@@ -24,5 +24,6 @@ export const Docs: Story = {
 			options: [undefined, 'login', 'thumb_up', 'person'],
 			control: { type: 'select' }
 		},
-	}
+	},
+	parameters: { docs: { description: { story: 'A button triggers an action or event when activated' } } }
 }

@@ -10,7 +10,7 @@ export const pixelDarkTheme = create({
 	'fontBase': '"Pixel Code", sans-serif',
 	'fontCode': '"Pixel Code", sans-serif',
 
-	appBg: '#000',
+	// appBg: '#000',
 	appContentBg: '#11141d',
 	appPreviewBg: '#11141d',
 	textColor: '#fff',
@@ -19,5 +19,10 @@ export const pixelDarkTheme = create({
 	colorSecondary: '#11141d',
 	barBg: '#11141d',
 	appBorderRadius: 0,
-	inputBorderRadius: 0
+	inputBorderRadius: 0,
+	barTextColor: '#fff',
+
+	textInverseColor: '#fff',
+	textMutedColor: '#fff',
+	inputTextColor: '#fff'
 });

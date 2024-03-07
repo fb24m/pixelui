@@ -2,7 +2,7 @@ import { StoryObj } from '@storybook/react'
 import { CubeLoader } from './CubeLoader.component'
 
 const meta = {
-	title: 'CubeLoader',
+	title: 'Components / CubeLoader',
 	component: CubeLoader
 }
 
@@ -24,5 +24,6 @@ export const Docs: Story = {
 			description: 'Control the animation speed (1 = 0.8s, 2 = 1s, 3 = 1.6s)',
 			control: { type: 'select' }
 		}
-	}
+	},
+	parameters: { docs: { description: { story: 'A cube loader alerts a user that content is being loaded or processed and they should wait for the activity to complete' } } }
 }

@@ -2,7 +2,7 @@ import { StoryObj } from '@storybook/react'
 import { Icon as IconComponent } from './Icon.component'
 
 const meta = {
-	title: 'Icon',
+	title: 'Components / Icon',
 	component: IconComponent
 }
 
