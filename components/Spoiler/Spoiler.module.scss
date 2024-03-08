@@ -1,0 +1,13 @@
+@use "../vars";
+
+.spoiler {
+	&[open] {
+		summary {
+			svg {
+				transform: rotateZ(90deg);
+			}
+
+			background-color: vars.$app-accent;
+		}
+	}
+}

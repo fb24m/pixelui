@@ -1,7 +1,8 @@
 import type { IconProps } from './Icon.props'
+import styles from './Icon.module.scss'
 
 export const Icon = ({ className, icon, ...props }: IconProps) => {
 	return (
-		<span className={`font-material ${className}`} {...props}>{icon}</span>
+		<span className={`${styles.icon} ${className}`} {...props}>{icon}</span>
 	)
 }

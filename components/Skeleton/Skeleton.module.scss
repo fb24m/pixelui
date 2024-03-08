@@ -1,0 +1,33 @@
+@use "../vars";
+
+.skeleton {
+	width: 300px;
+	height: 20px;
+	background-color: vars.$app-card;
+	position: relative;
+}
+
+.skeletonline {
+	background-color: vars.$app;
+	position: absolute;
+	width: 16px;
+	height: 200%;
+	transform: rotate(25deg) translateY(-25%);
+
+	animation: {
+		name: skeleton;
+		duration: .8s;
+		iteration-count: infinite;
+	}
+}
+
+@keyframes skeleton {
+	from {
+		margin-left: -70%;
+	}
+
+	to {
+		margin-left: 100%;
+		width: 50px;
+	}
+}

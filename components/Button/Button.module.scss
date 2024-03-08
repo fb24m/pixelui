@@ -1,0 +1,48 @@
+@use "../vars";
+
+.button {
+	padding: 8px 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&,
+	&:active,
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+
+	&.primary {
+		background-color: vars.$app-card;
+
+		&:hover {
+			background-color: vars.$app-accent;
+		}
+	}
+
+	&.secondary {
+		outline: vars.$app-card 4px solid;
+		outline-offset: -4px;
+
+		&:hover {
+			background-color: vars.$app-accent;
+			outline-color: vars.$app-accent;
+		}
+	}
+
+	&.transparent {
+		&:hover {
+			background-color: vars.$app-card;
+		}
+	}
+
+	&.withIcon {
+		padding-block: 2px;
+	}
+
+}
+
+.icon {
+	font-size: 20px;
+}

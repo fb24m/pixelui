@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/react'
-import { CubeLoader } from '.'
+import { CubeLoader } from './CubeLoader'
+import { CubeLoaderProps } from './CubeLoader.props'
 
 const meta = {
 	title: 'Components / CubeLoader',
@@ -8,7 +9,7 @@ const meta = {
 
 export default meta
 
-type Story = StoryObj<typeof CubeLoader>
+type Story = StoryObj<CubeLoaderProps>
 
 export const Docs: Story = {
 	args: {
@@ -17,7 +18,7 @@ export const Docs: Story = {
 	argTypes: {
 		variation: {
 			control: { type: 'select' },
-			description: 'Controls the animation type'
+			description: 'Controls the animation type',
 		}
 	},
 	parameters: { docs: { description: { story: 'A cube loader alerts a user that content is being loaded or processed and they should wait for the activity to complete' } } }

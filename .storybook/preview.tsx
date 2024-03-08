@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react'
-import '../src/layout.css'
+import { PixieProvider } from '../components/PixieProvider/PixieProvider'
 
 import { pixelDarkTheme } from './brand-theme'
 
@@ -13,9 +13,14 @@ const preview: Preview = {
       },
     },
     docs: {
-      theme: pixelDarkTheme
+      theme: pixelDarkTheme,
     }
-  }
+  },
+  decorators: [
+    (Outlet) => <PixieProvider>
+      <Outlet />
+    </PixieProvider>
+  ]
 };
 
 export default preview;

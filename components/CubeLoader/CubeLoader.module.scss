@@ -1,0 +1,186 @@
+@use "../vars";
+
+.beat {
+	width: 70px;
+	height: 70px;
+	position: relative;
+}
+
+.beat_cube {
+	width: 25px;
+	height: 25px;
+	background-color: vars.$app-accent;
+	position: absolute;
+
+	animation-duration: .6s;
+	animation-iteration-count: infinite;
+}
+
+.beat_cube1 {
+	top: 0;
+	left: 0;
+}
+
+.beat_cube2 {
+	top: 0;
+	right: 0;
+}
+
+.beat_cube3 {
+	bottom: 0;
+	left: 0;
+}
+
+.beat_cube4 {
+	bottom: 0;
+	right: 0;
+}
+
+@for $i from 1 through 4 {
+	.beat_cube#{$i} {
+		animation-name: beat_cube#{$i};
+	}
+}
+
+@keyframes beat_cube1 {
+	from {
+		top: 0;
+		left: 0;
+	}
+
+	50% {
+		top: 10px;
+		left: 10px;
+	}
+}
+
+@keyframes beat_cube2 {
+	from {
+		top: 0;
+		right: 0;
+	}
+
+	50% {
+		top: 10px;
+		right: 10px;
+	}
+}
+
+@keyframes beat_cube3 {
+	from {
+		bottom: 0;
+		left: 0;
+	}
+
+	50% {
+		bottom: 10px;
+		left: 10px;
+	}
+}
+
+@keyframes beat_cube4 {
+	from {
+		bottom: 0;
+		right: 0;
+	}
+
+	50% {
+		bottom: 10px;
+		right: 10px;
+	}
+}
+
+.jumping,
+.spinning {
+	width: 72px;
+	height: 32px;
+	position: relative;
+}
+
+.jumping_cube,
+.spinning_cube {
+	width: 32px;
+	height: 32px;
+	background-color: vars.$app-accent;
+	animation-iteration-count: infinite;
+	animation-duration: .6s;
+	position: absolute;
+}
+
+.jumping_cube_1 {
+	animation-name: jumping_cube1;
+}
+
+.jumping_cube_2 {
+	left: 40px;
+	animation-name: jumping_cube2;
+}
+
+@keyframes jumping_cube1 {
+	0% {
+		left: 40px;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes jumping_cube2 {
+	0% {
+		left: 0px;
+		top: 0;
+	}
+
+	25% {
+		top: -40px;
+	}
+
+	50% {
+		left: 40px;
+	}
+
+	100% {
+		top: 0;
+		left: 40px;
+	}
+}
+
+.spinning {
+	width: 80px;
+}
+
+.spinning_cube {
+	animation-duration: .7s;
+	width: 30px;
+	height: 30px;
+}
+
+.spinning_cube_1 {
+	animation-name: spinning_cube1;
+}
+
+.spinning_cube_2 {
+	animation-name: spinning_cube2;
+	left: 40px;
+}
+
+@keyframes spinning_cube1 {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 50px;
+	}
+}
+
+@keyframes spinning_cube2 {
+	0% {
+		left: 50px;
+	}
+
+	100% {
+		left: 0;
+	}
+}

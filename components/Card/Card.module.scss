@@ -1,0 +1,47 @@
+/*
+
+'pixel': `px-6 py-2 my-4 bg-app-card relative before:block before:h-4 before:w-[calc(100%-32px)] before:absolute before:-top-4 before:left-4 before:bg-app-card
+			after:block after:h-4 after:w-[calc(100%-32px)] after:absolute after:-bottom-4 after:left-4 after:bg-app-card`,
+		'solid': 'bg-app-card p-4 px-5',
+		'outline': 'outline-app-card outline-4 outline -outline-offset-4 text-app-card relative p-4 px-5'
+*/
+
+@use "../vars";
+
+.card {
+	&.pixel {
+		padding: 8px 24px;
+		background-color: vars.$app-card;
+		position: relative;
+		margin-block: 8px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			left: 16px;
+			right: 16px;
+			height: 16px;
+			background-color: vars.$app-card;
+		}
+
+		&::before {
+			top: -16px;
+		}
+
+		&::after {
+			bottom: -16px;
+		}
+	}
+
+	&.solid {
+		padding: 16px 20px;
+		background-color: vars.$app-card;
+	}
+
+	&.outline {
+		outline: vars.$app-card 4px solid;
+		outline-offset: -4px;
+		padding: 16px 20px;
+	}
+}
