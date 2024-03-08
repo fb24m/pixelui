@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react'
-import { SpoilerTitle } from './SpoilerTitle.component'
+import { SpoilerTitle } from '.'
 
 const meta = {
 	title: 'Components /Spoiler/ SpoilerTitle',

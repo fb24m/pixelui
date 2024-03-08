@@ -1,8 +1,4 @@
-import type { HTMLAttributes } from 'react'
-
-export interface CardProps extends HTMLAttributes<HTMLDivElement> {
-	appearance?: 'pixel' | 'solid' | 'outline'
-}
+import type { CardProps } from './Card.props'
 
 export const Card = ({ className, children, appearance = 'pixel', ...props }: CardProps) => {
 	const styles = {

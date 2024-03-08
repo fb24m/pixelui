@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react'
-import { Card as CardComponent } from './Card.component'
+import { Card as CardComponent } from './index/'
 
 const meta = {
 	title: 'Components / Card',

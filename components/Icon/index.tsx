@@ -1,8 +1,4 @@
-import type { HTMLAttributes } from 'react'
-
-export interface IconProps extends HTMLAttributes<HTMLSpanElement> {
-	icon: string
-}
+import type { IconProps } from './Icon.props'
 
 export const Icon = ({ className, icon, ...props }: IconProps) => {
 	return (

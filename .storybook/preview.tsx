@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react'
-import '../src/pages/Layout/Layout.scss'
+import '../src/layout.css'
 
 import { pixelDarkTheme } from './brand-theme'
 

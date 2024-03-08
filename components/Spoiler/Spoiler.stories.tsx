@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/react'
-import { Spoiler } from './Spoiler.component'
-import { SpoilerTitle } from './SpoilerTitle.component'
-import { SpoilerBody } from './SpoilerBody.component'
+import { Spoiler } from '.'
+import { SpoilerTitle } from '../SpoilerTitle'
+import { SpoilerBody } from '../SpoilerBody'
 
 const meta = {
 	title: 'Components / Spoiler / Spoiler',

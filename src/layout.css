@@ -6,10 +6,8 @@
 	src: url('PixelCode.woff2');
 }
 
-summary {
-	&::marker {
-		content: '';
-	}
+summary::marker {
+	content: '';
 }
 
 * {
@@ -97,6 +95,54 @@ ol {
 }
 
 @keyframes cube4 {
+	from {
+		bottom: 0;
+		right: 0;
+	}
+
+	50% {
+		bottom: 10px;
+		right: 10px;
+	}
+}
+
+@keyframes cubeforward1 {
+	from {
+		top: 0;
+		left: 0;
+	}
+
+	50% {
+		top: 10px;
+		left: 10px;
+	}
+}
+
+@keyframes cubeforward2 {
+	from {
+		top: 0;
+		right: 0;
+	}
+
+	50% {
+		top: 10px;
+		right: 10px;
+	}
+}
+
+@keyframes cubeforward3 {
+	from {
+		bottom: 0;
+		left: 0;
+	}
+
+	50% {
+		bottom: 10px;
+		left: 10px;
+	}
+}
+
+@keyframes cubeforward4 {
 	from {
 		bottom: 0;
 		right: 0;

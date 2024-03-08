@@ -1,12 +1,7 @@
-import { HTMLAttributes } from "react"
-import { Icon } from "./Icon.component"
+import { Icon } from '../Icon'
+import type { ButtonProps } from './Button.props'
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-	appearance: 'primary' | 'secondary' | 'transparent'
-	icon?: string
-}
-
-export const Button = ({ className, children, appearance, icon, ...props }: ButtonProps) => {
+export const Button = ({ className, children, appearance = 'primary', icon, ...props }: ButtonProps) => {
 
 	const defaultClasses = 'px-3 py-2 text-sm font-press-start-2p'
 	const classes = {

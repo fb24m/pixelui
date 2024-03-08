@@ -1,9 +1,6 @@
 import type { HTMLAttributes } from 'react'
 
-export interface SpoilerTitleProps extends HTMLAttributes<HTMLElement> {
-}
-
-export const SpoilerTitle = ({ className, children, ...props }: SpoilerTitleProps) => {
+export const SpoilerTitle = ({ className, children, ...props }: HTMLAttributes<HTMLElement>) => {
 	return (
 		<summary className={`${className} spoiler__title font-press-start-2p p-4 hover:bg-app-accent py-6 flex gap-2 items-center cursor-pointer text-2xl [user-select:none]`} {...props}>
 			<svg className="w-8 h-8" width="290" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">

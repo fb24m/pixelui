@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react'
-import { Icon as IconComponent } from './Icon.component'
+import { Icon as IconComponent } from '.'
 
 const meta = {
 	title: 'Components / Icon',

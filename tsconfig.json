@@ -19,13 +19,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "plugins": [{
-      "name": "typescript-plugin-css-modules"
-    }],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "./declaration.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "components", "components/Card/index.tsx"]
 }
