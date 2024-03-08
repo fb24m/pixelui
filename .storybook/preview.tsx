@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react'
 import { PixieProvider } from '../components/PixieProvider/PixieProvider'
+import '../src/layout.css'
 
 import { pixelDarkTheme } from './brand-theme'
 

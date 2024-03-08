@@ -24,6 +24,11 @@ export const Docs: Story = {
 			options: [undefined, 'login', 'thumb_up', 'person'],
 			control: { type: 'select' }
 		},
+		type: {
+			table: {
+				disable: true
+			}
+		}
 	},
 	parameters: { docs: { description: { story: 'A button triggers an action or event when activated' } } }
 }

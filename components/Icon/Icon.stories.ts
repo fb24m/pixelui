@@ -1,14 +1,14 @@
 import { StoryObj } from '@storybook/react'
-import { Icon as IconComponent } from './Icon'
+import { Icon } from './Icon'
 
 const meta = {
 	title: 'Components / Icon',
-	component: IconComponent
+	component: Icon
 }
 
 export default meta
 
-type Story = StoryObj<typeof IconComponent>
+type Story = StoryObj<typeof Icon>
 
 export const Docs: Story = {
 	args: {

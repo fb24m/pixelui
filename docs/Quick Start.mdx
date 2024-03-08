@@ -1,0 +1,71 @@
+# Pixie UI
+
+Pixie UI is a pixel UI for React/Next/etc. You can easily use pixel components for your apps.
+
+### Installation
+
+To install Pixie UI use `npm i pixieui` or `yarn add pixieui` or `pnpm i pixieui` command
+
+### Import font
+
+Pixie UI is using Press Start 2P google font. To include it to your react app, add to head element the next code:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular&display=swap"
+  rel="stylesheet"
+/>
+```
+
+If you're using Next.js 13+, you can import the font from the build-in library:
+
+```typescript
+import { Press_Start_2P } from 'next/font/google'
+
+const pressStart2P = Press_Start_2P({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400']
+});
+
+export default function RootLayout() {
+  return (
+    <html lang="ru">
+      <body className={pressStart2P.className}>
+        ...
+```
+
+You can also import font in css:
+
+```css
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P:regular&display=swap");
+```
+
+To get started, wrap all your app to the PixieProvider from 'pixieui/components'.
+
+For React:
+
+```typescript
+import { PixieProvider } from "pixieui/components";
+
+const App = () => {
+  return <PixieProvider>...</PixieProvider>;
+};
+```
+
+For Next.js:
+
+```typescript
+import { PixieProvider } from "pixieui/components";
+
+export default function RootLayout() {
+  return (
+    <html lang="ru">
+      <body>
+        <PixieProvider>...</PixieProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+All components are exported from `'pixieui/components'`, so to import a Button, you can use `import { Button } from 'pixieui/components'`

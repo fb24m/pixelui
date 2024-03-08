@@ -1,0 +1,73 @@
+@use "../vars";
+
+.wrapper {
+	display: inline-flex;
+	align-items: center;
+	padding: 8px 16px 12px;
+
+	&.primary {
+		background-color: vars.$app-card;
+
+		&:hover,
+		&:has(input:focus) {
+			border-bottom: vars.$app-accent 4px solid;
+			padding-bottom: 8px;
+		}
+	}
+
+	&.withIcon {
+		padding-block: 5px;
+
+		&.primary {
+
+			&:hover,
+			&:has(input:focus) {
+				padding-bottom: 1px;
+			}
+		}
+	}
+
+	&.secondary {
+		outline: vars.$app-card 4px solid;
+		outline-offset: -4px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 4px;
+			right: 0;
+			height: 4px;
+			background-color: vars.$app-accent;
+			bottom: 0;
+			z-index: 2;
+			display: none;
+		}
+
+		&:has(input:focus),
+		&:hover {
+			&::after {
+				display: block;
+			}
+		}
+	}
+}
+
+.input {
+	margin-left: 8px;
+
+	&,
+	&:active,
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+
+	background-color: transparent;
+
+
+}
+
+.icon {
+	height: 100%;
+}

@@ -1,0 +1,13 @@
+.breadcrumbsItem {
+	list-style: none;
+	line-height: 150%;
+
+	&+svg {
+		width: 20px;
+		height: 20px;
+
+		&:last-child {
+			display: none;
+		}
+	}
+}
